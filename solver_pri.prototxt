@@ -1,0 +1,19 @@
+type: "RMSProp"
+rms_decay: 0.98
+
+net: "pri.prototxt"
+test_iter: 250 
+test_interval: 1000
+
+base_lr: 0.001
+gamma: 0.9
+
+lr_policy: "fixed"
+
+display: 1000
+max_iter: 1000000
+weight_decay: 0.0005
+snapshot: 50000
+snapshot_prefix: "model/pri"
+solver_mode: CPU 
+
